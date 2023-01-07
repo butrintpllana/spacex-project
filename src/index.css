@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Ubuntu:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+  max-width: 100%;
+  width: 100%;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-rose-100 to-teal-100
+}
+
+.btn{
+  @apply py-3 px-8 border-white border-2 bg-transparent text-indigo-900 hover:opacity-75 transition-all duration-200
+}
+
+
+.heading {
+  @apply text-indigo-900 font-bold text-3xl md:text-4xl lg:text-5xl;
+}
+
+.loading-spinner {
+  @apply flex flex-col items-center justify-center h-screen;
+}
+
+.loading-spinner article {
+  @apply w-20 h-20 border-4 border-white opacity-50 border-t-green-500 rounded-full animate-spin;
+}
+
+.loading-spinner p {
+  @apply text-white opacity-75 mt-2 text-center;
+}
+
+
+p {
+  line-height: 1.8;
+  @apply text-sm;
+}
+
+.max-width {
+  @apply max-w-6xl mx-auto
+}
+
+.article {
+  @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-200
+}
+
+.comment-section{
+  @apply text-black opacity-75 mt-2 text-xl
+}
