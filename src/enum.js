@@ -1,0 +1,6 @@
+export const missionActionTypes = {
+    SET_MISSIONS: 'SET_MISSIONS',
+    SET_MISSION_COMMENTS: 'SET_MISSION_COMMENTS',
+    SET_FETCHED: 'SET_FETCHED',
+  };
+  
