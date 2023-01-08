@@ -94,26 +94,17 @@ export default function SingleLaunches() {
           </article>
 
           <article className='border-t-4 border-indigo-500 my-1'>
-            <input
-              ref={name}
-              type='text'
-              className='block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 my-1 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-              name='name'
-              placeholder='Name'
-            ></input>
             <textarea
               ref={description}
               id='message'
               rows='4'
-              class='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+              className='my-1 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               placeholder='Leave a comment...'
             ></textarea>
             <button onClick={handleClick} className='btn my-4 float-right'>
               Post Comment
             </button>
-          </article>
-          <article>
-          <h1 className='text-indigo-800 text-xl'>Comments</h1>
+            <h1 className='border-t-4 border-indigo-500 text-indigo-800 text-xl my-28 text-center '>Comments</h1>
             {commentsForFlight &&
               commentsForFlight.map((comment) => (
               
